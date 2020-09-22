@@ -7,27 +7,27 @@ system_configuration:
     fields:
         divante_ga.ga_enabled:
             data_type: boolean
-            type: oro_config_checkbox
+            type: Oro\Bundle\ConfigBundle\Form\Type\ConfigCheckbox
             options:
                 label: divante.google_analytics.system_configuration.fields.ga_enabled.label
                 tooltip: divante.google_analytics.system_configuration.fields.ga_enabled.tooltip
                 required: false
         divante_ga.ga_user_id:
             data_type: string
-            type: text
+            type: Symfony\Component\Form\Extension\Core\Type\TextType
             options:
                 label: divante.google_analytics.system_configuration.fields.ga_user_id.label
 
         divante_ga.gtm_enabled:
             data_type: boolean
-            type: oro_config_checkbox
+            type: Oro\Bundle\ConfigBundle\Form\Type\ConfigCheckbox
             options:
                 label: divante.google_analytics.system_configuration.fields.gtm_enabled.label
                 tooltip: divante.google_analytics.system_configuration.fields.gtm_enabled.tooltip
                 required: false
         divante_ga.gtm_user_id:
             data_type: string
-            type: text
+            type: Symfony\Component\Form\Extension\Core\Type\TextType
             options:
                 label: divante.google_analytics.system_configuration.fields.gtm_user_id.label
     tree:
